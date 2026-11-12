@@ -1,8 +1,10 @@
-// Uklanjanje preloadera čim se stranica učita
+// Preloader sa elegantnim minimalnim trajanjem
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
     if (preloader) {
-        preloader.classList.add('fade-out');
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+        }, 1000); // 1000 milisekundi = 1 sekunda premijum prikaza
     }
 });
 
