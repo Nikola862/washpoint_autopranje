@@ -44,6 +44,7 @@
                 <a href="#usluge">Usluge</a>
                 <a href="#cenovnik">Cenovnik</a>
                 <a href="#o-nama">O nama</a>
+                <a href="#galerija">Galerija</a>
                 <a href="#kontakt" class="btn-nav">Zakaži termin</a>
             </nav>
             <div class="hamburger">
@@ -127,7 +128,6 @@
                         <li><span>Mali gradski auto (komplet)</span> <strong>od 40€</strong></li>
                         <li><span>Limuzina / Karavan (komplet)</span> <strong>od 50€</strong></li>
                         <li><span>SUV / Džip (komplet)</span> <strong>od 60€</strong></li>
-                        <li><span>Pranje pojedinačnog sedišta</span> <strong>8€ / kom</strong></li>
                     </ul>
                     <a href="#kontakt" class="btn btn-primary full-btn">Zakaži termin</a>
                 </div>
@@ -135,7 +135,6 @@
                 <div class="pricing-card reveal" data-reveal="fade-up" data-delay="250">
                     <h3><i class="fa-solid fa-couch"></i> Nameštaj</h3>
                     <ul class="price-list">
-                        <li><span>Ugaona garnitura (po sedalnom mestu)</span> <strong>od 8€</strong></li>
                         <li><span>Trosed / Dvosed</span> <strong>20€ - 30€</strong></li>
                         <li><span>Fotelja / Stolica</span> <strong>5€ - 10€</strong></li>
                         <li><span>Dubinsko pranje dušeka (obostrano)</span> <strong>15€ - 30€</strong></li>
@@ -158,6 +157,10 @@
                         <h3><span class="counter" data-target="150">0</span>+</h3>
                         <p>Očišćenih automobila</p>
                     </div>
+                    <div class="stat-box reveal" data-reveal="fade-up" data-delay="70">
+                        <h3><span class="counter" data-target="70">0</span>+</h3>
+                        <p>Očišćenog nameštaja</p>
+                    </div>
                     <div class="stat-box reveal" data-reveal="fade-up" data-delay="300">
                         <h3><span class="counter" data-target="100">0</span>%</h3>
                         <p>Zadovoljne klijentele</p>
@@ -168,6 +171,73 @@
                 <div class="glow-effect"></div>
                 <img src="images/logo.png" alt="Washpoint brand" class="about-img-logo">
             </div>
+        </div>
+    </section>
+
+    <!-- GALERIJA RADOVA (FULL-WIDTH MARQUEE SA LIGHTBOX POPUP-OM) -->
+    <section id="galerija" class="gallery section-padding">
+        <div class="container">
+            <div class="section-title reveal" data-reveal="fade-up">
+                <h2>Galerija <span>Radova</span></h2>
+                <p>Pogledajte rezultate našeg dubinskog pranja – prevucite ili kliknite za uvećanje</p>
+            </div>
+        </div>
+
+        <!-- GALERIJA RADOVA (KLASIČAN GRID ZA SLIKE I VIDEO SNIMKE) -->
+        <section id="galerija" class="gallery section-padding">
+            <div class="container">
+                <div class="section-title reveal" data-reveal="fade-up">
+                    <h2>Galerija <span>Radova</span></h2>
+                    <p>Pogledajte video snimke i rezultate našeg dubinskog pranja</p>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <!-- KARTICA 1: Gepek (Ima 2 slike: Pre i Posle) -->
+                    <div class="gallery-card" data-album="images/pre-1.jpg, images/posle-1.jpg">
+                        <div class="gallery-img-box">
+                            <img src="images/pre-1.jpg" alt="Dubinsko pranje gepeka i plastika">
+                            <div class="gallery-overlay">
+                                <i class="fa-solid fa-images"></i>
+                                <span>Pogledaj (2 slike)</span>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Gepek i plastike</h4>
+                            <p>Dubinsko čišćenje i zaštita (Pre / Posle)</p>
+                        </div>
+                    </div>
+
+                    <!-- KARTICA 2: Video primer (Ima 1 video, pa se strelice neće ni pojavljivati) -->
+                    <div class="gallery-card" data-album="images/video-1.mp4">
+                        <div class="gallery-img-box">
+                            <video src="images/video-1.mp4" muted preload="metadata"></video>
+                            <div class="play-icon-overlay">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="gallery-overlay">
+                                <i class="fa-solid fa-video"></i>
+                                <span>Pusti video</span>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Pranje sedišta u akciji</h4>
+                            <p>Video snimak procesa</p>
+                        </div>
+                    </div>
+
+                    <!-- Možeš lako dodavati još kartica na isti način... -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Dugmići za ručno listanje levo/desno -->
+        <div class="container marquee-controls">
+            <button class="marquee-btn" id="prevWork" aria-label="Prethodni rad"><i
+                    class="fas fa-chevron-left"></i></button>
+            <button class="marquee-btn" id="nextWork" aria-label="Sledeći rad"><i
+                    class="fas fa-chevron-right"></i></button>
         </div>
     </section>
 
@@ -230,10 +300,13 @@
                 <span>Washpoint</span>
             </div>
             <p>&copy; 2026 Washpoint. Sva prava zadržana.</p>
+            <span class="footer-signature">** Designed & Developed <a href="#" target="_blank"> by WP studio
+                    **</a></span>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="gallery.js"></script>
 </body>
 
 </html>
